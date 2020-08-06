@@ -1,0 +1,22 @@
+{
+  "name": "study_typescript",
+  "version": "1.0.0",
+  "description": "studynotes for studying typescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shogo-Sakai/study_typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shogo-Sakai/study_typescript/issues"
+  },
+  "homepage": "https://github.com/Shogo-Sakai/study_typescript#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
