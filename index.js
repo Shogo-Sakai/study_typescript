@@ -42,4 +42,11 @@ var cloth = {
     color: 'white',
     size: 'small'
 };
-console.log(cloth);
+function add(num1, num2) {
+    return num1 + num2;
+}
+console.log(add(2, 123));
+function sayHello() {
+    console.log('Hello');
+}
+console.log(sayHello());

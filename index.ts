@@ -61,3 +61,10 @@ function add(num1:number, num2:number): number{
 }
 
 console.log(add(2,123))
+
+function sayHello():void{
+  console.log('Hello');
+}
+
+console.log(sayHello());
+
