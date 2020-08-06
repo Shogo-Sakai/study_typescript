@@ -1,0 +1,1 @@
+console.log('compile typescript to JS!')
