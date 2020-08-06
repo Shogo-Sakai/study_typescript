@@ -1,21 +1,23 @@
-var hasValue = true;
-var count = 10;
-var float = 3.141;
-var negative = -123;
-var single = 'single';
-var double = "double";
-var back = "back";
-var hello;
+"use strict";
+let hasValue = true;
+let count = 10;
+count = 123;
+let float = 3.141;
+let negative = -123;
+let single = 'single';
+let double = "double";
+let back = `back`;
+let hello;
 hello = 'hello';
-var person = {
+const person = {
     name: {
         first: 'Jack',
         last: 'Smith'
     },
     age: 20
 };
-var fruits = ['Apple', 'Banna', 'Grape', 123];
-var book = ['business', 1500, false];
+const fruits = ['Apple', 'Banna', 'Grape', 123];
+const book = ['business', 1500, false];
 var CoffeeSize;
 (function (CoffeeSize) {
     CoffeeSize[CoffeeSize["SHORT"] = 0] = "SHORT";
@@ -23,22 +25,22 @@ var CoffeeSize;
     CoffeeSize[CoffeeSize["GRANDE"] = 2] = "GRANDE";
     CoffeeSize[CoffeeSize["VENTI"] = 3] = "VENTI";
 })(CoffeeSize || (CoffeeSize = {}));
-var coffee = {
+const coffee = {
     hot: true,
     size: CoffeeSize.TALL
 };
 coffee.size = CoffeeSize.GRANDE;
-var anything = false;
+let anything = false;
 anything = 'Hello';
 anything = 123123;
 anything = 'banana';
 anything = [1, 2, 3];
-var banana = 'banana';
+let banana = 'banana';
 banana = anything;
-var UnionType = 'UnionType';
-var UnionTypes = [123, 'Hello'];
-var apple = 'apple';
-var cloth = {
+let UnionType = 'UnionType';
+let UnionTypes = [123, 'Hello'];
+const apple = 'apple';
+let cloth = {
     color: 'white',
     size: 'small'
 };
@@ -49,4 +51,26 @@ console.log(add(2, 123));
 function sayHello() {
     console.log('Hello');
 }
-console.log(sayHello());
+const anotherAdd = function add(num1, num2) {
+    return num1 + num2;
+};
+const doubleNumber = num => num * 2;
+function doubleAndHandle(num, cb) {
+    const doubleNum = cb(num * 2);
+    console.log(doubleNum);
+}
+;
+doubleAndHandle(32, doubleNum => {
+    return doubleNum;
+});
+let unknownInput;
+let anyInput;
+let text;
+unknownInput = 'this is unknown text';
+unknownInput = 123;
+unknownInput = true;
+anyInput = 123123;
+anyInput = false;
+if (typeof unknownInput === 'string') {
+    text = unknownInput;
+}

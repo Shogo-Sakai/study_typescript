@@ -1,5 +1,6 @@
 let hasValue = true;
 let count = 10;
+count = 123;
 let float = 3.141;
 let negative = -123;
 let single = 'single';
@@ -94,3 +95,4 @@ anyInput = false;
 if(typeof unknownInput === 'string' ){
   text = unknownInput;
 }
+
