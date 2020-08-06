@@ -40,5 +40,6 @@ anything = [1,2,3];
 
 let banana = 'banana';
 banana = anything;
-console.log(banana);
 
+let UnionType: number|string = 'UnionType';
+let UnionTypes: (number|string)[] = [123, 'Hello']
