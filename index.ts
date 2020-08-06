@@ -43,3 +43,15 @@ banana = anything;
 
 let UnionType: number|string = 'UnionType';
 let UnionTypes: (number|string)[] = [123, 'Hello']
+
+const apple = 'apple';
+let clothSize: 'small'| 'midium' | 'large' = 'large';
+let cloth:{
+  color: string,
+  size: 'small'| 'midium' | 'large';
+} ={
+  color: 'white',
+  size: 'small'
+}
+
+console.log(cloth);

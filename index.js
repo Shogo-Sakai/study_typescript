@@ -35,4 +35,12 @@ anything = 'banana';
 anything = [1, 2, 3];
 var banana = 'banana';
 banana = anything;
-console.log(banana);
+var UnionType = 'UnionType';
+var UnionTypes = [123, 'Hello'];
+var apple = 'apple';
+var clothSize = 'large';
+var cloth = {
+    color: 'white',
+    size: 'small'
+};
+console.log(cloth);
