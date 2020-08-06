@@ -80,3 +80,17 @@ function doubleAndHandle( num:number,cb:(num: number)=>void):void{
 doubleAndHandle(32, doubleNum => {
   return doubleNum;
 });
+
+let unknownInput: unknown;
+let anyInput: any;
+let text: string;
+
+unknownInput = 'this is unknown text';
+unknownInput = 123;
+unknownInput = true;
+anyInput = 123123;
+anyInput = false;
+
+if(typeof unknownInput === 'string' ){
+  text = unknownInput;
+}
