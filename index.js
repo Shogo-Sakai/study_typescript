@@ -38,7 +38,6 @@ banana = anything;
 var UnionType = 'UnionType';
 var UnionTypes = [123, 'Hello'];
 var apple = 'apple';
-var clothSize = 'large';
 var cloth = {
     color: 'white',
     size: 'small'

@@ -45,10 +45,12 @@ let UnionType: number|string = 'UnionType';
 let UnionTypes: (number|string)[] = [123, 'Hello']
 
 const apple = 'apple';
-let clothSize: 'small'| 'midium' | 'large' = 'large';
+
+type clothSizes = 'small'| 'midium' | 'large';
+
 let cloth:{
   color: string,
-  size: 'small'| 'midium' | 'large';
+  size:clothSizes;
 } ={
   color: 'white',
   size: 'small'
