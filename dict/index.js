@@ -1,23 +1,23 @@
 "use strict";
-let hasValue = true;
-let count = 10;
+var hasValue = true;
+var count = 10;
 count = 123;
-let float = 3.141;
-let negative = -123;
-let single = 'single';
-let double = "double";
-let back = `back`;
-let hello;
+var float = 3.141;
+var negative = -123;
+var single = 'single';
+var double = "double";
+var back = "back";
+var hello;
 hello = 'hello';
-const person = {
+var person = {
     name: {
         first: 'Jack',
         last: 'Smith'
     },
     age: 20
 };
-const fruits = ['Apple', 'Banna', 'Grape', 123];
-const book = ['business', 1500, false];
+var fruits = ['Apple', 'Banna', 'Grape', 123];
+var book = ['business', 1500, false];
 var CoffeeSize;
 (function (CoffeeSize) {
     CoffeeSize[CoffeeSize["SHORT"] = 0] = "SHORT";
@@ -25,22 +25,22 @@ var CoffeeSize;
     CoffeeSize[CoffeeSize["GRANDE"] = 2] = "GRANDE";
     CoffeeSize[CoffeeSize["VENTI"] = 3] = "VENTI";
 })(CoffeeSize || (CoffeeSize = {}));
-const coffee = {
+var coffee = {
     hot: true,
     size: CoffeeSize.TALL
 };
 coffee.size = CoffeeSize.GRANDE;
-let anything = false;
+var anything = false;
 anything = 'Hello';
 anything = 123123;
 anything = 'banana';
 anything = [1, 2, 3];
-let banana = 'banana';
+var banana = 'banana';
 banana = anything;
-let UnionType = 'UnionType';
-let UnionTypes = [123, 'Hello'];
-const apple = 'apple';
-let cloth = {
+var UnionType = 'UnionType';
+var UnionTypes = [123, 'Hello'];
+var apple = 'apple';
+var cloth = {
     color: 'white',
     size: 'small'
 };
@@ -51,21 +51,21 @@ console.log(add(2, 123));
 function sayHello() {
     console.log('Hello');
 }
-const anotherAdd = function add(num1, num2) {
+var anotherAdd = function add(num1, num2) {
     return num1 + num2;
 };
-const doubleNumber = num => num * 2;
+var doubleNumber = function (num) { return num * 2; };
 function doubleAndHandle(num, cb) {
-    const doubleNum = cb(num * 2);
+    var doubleNum = cb(num * 2);
     console.log(doubleNum);
 }
 ;
-doubleAndHandle(32, doubleNum => {
+doubleAndHandle(32, function (doubleNum) {
     return doubleNum;
 });
-let unknownInput;
-let anyInput;
-let text;
+var unknownInput;
+var anyInput;
+var text;
 unknownInput = 'this is unknown text';
 unknownInput = 123;
 unknownInput = true;
