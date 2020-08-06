@@ -1,1 +1,2 @@
-console.log('compile typescript to JS!')
+const message = 'compile typescript to JS!'
+console.log( message.toUpperCase());
