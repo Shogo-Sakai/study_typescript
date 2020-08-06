@@ -27,5 +27,12 @@ var coffee = {
     hot: true,
     size: CoffeeSize.TALL
 };
-// coffee.size = CoffeeSize.GRANDE;
-console.log(coffee.size);
+coffee.size = CoffeeSize.GRANDE;
+var anything = false;
+anything = 'Hello';
+anything = 123123;
+anything = 'banana';
+anything = [1, 2, 3];
+var banana = 'banana';
+banana = anything;
+console.log(banana);

@@ -30,6 +30,15 @@ const coffee = {
   hot: true,
   size: CoffeeSize.TALL
 }
-// coffee.size = CoffeeSize.GRANDE;
+coffee.size = CoffeeSize.GRANDE;
 
-console.log(coffee.size);
+let anything: any = false;
+anything = 'Hello';
+anything = 123123;
+anything = 'banana';
+anything = [1,2,3];
+
+let banana = 'banana';
+banana = anything;
+console.log(banana);
+
