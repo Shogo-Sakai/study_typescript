@@ -3,9 +3,15 @@ class Person{
   constructor( initName:string){
     this.name = initName;
   }
-  greeting(){
-    console.log(`Hello my name is ${this.name}`)
+  greeting(this: {name: string}){
+    console.log(`Hello my name is ${this.name}!!`)
   }
 }
-let michael = new Person('michael');
+
+const michael = new Person('michael');
 michael.greeting();
+const anotherMichael = {
+  name: 'michael2',
+  anotherGreeting: michael.greeting
+}
+anotherMichael.anotherGreeting();
