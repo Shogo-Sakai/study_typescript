@@ -27,8 +27,15 @@ var Person = /** @class */ (function () {
 }());
 var Teacher = /** @class */ (function (_super) {
     __extends(Teacher, _super);
-    function Teacher(name, age) {
-        return _super.call(this, name, age) || this;
+    function Teacher(name, age, subject) {
+        var _this = _super.call(this, name, age) || this;
+        _this.subject = subject;
+        return _this;
     }
+    Teacher.prototype.greeting = function () {
+        console.log("Hello my name is " + this.name + ", I am " + this.age + " years old. I teach " + this.subject + ".");
+    };
     return Teacher;
 }(Person));
+var teacher = new Teacher('michael', 25, 'English');
+teacher.greeting();

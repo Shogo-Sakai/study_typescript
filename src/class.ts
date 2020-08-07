@@ -1,5 +1,5 @@
 class Person{
-  constructor( public readonly name:string, private age: number){
+  constructor(readonly name:string, protected age: number){
   }
   incrementAge(){
     this.age += 1;
@@ -14,6 +14,9 @@ class Teacher extends Person {
     super(name,age)
   }
   greeting(this: Teacher){
-    console.log(`Hello my name is ${this.name}, I am ${this.age} years old. I teach ${this.subject}`)
+    console.log(`Hello my name is ${this.name}, I am ${this.age} years old. I teach ${this.subject}.`)
   }
 }
+
+const teacher = new Teacher('michael', 25, 'English');
+teacher.greeting();
