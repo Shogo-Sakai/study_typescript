@@ -9,6 +9,11 @@ class Person{
   }
 }
 
-const michael = new Person('michael', 32);
-michael.incrementAge();
-michael.greeting();
+class Teacher extends Person {
+  constructor(name: string, age: number, public subject: string){
+    super(name,age)
+  }
+  greeting(this: Teacher){
+    console.log(`Hello my name is ${this.name}, I am ${this.age} years old. I teach ${this.subject}`)
+  }
+}
