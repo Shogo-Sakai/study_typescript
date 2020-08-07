@@ -10,8 +10,20 @@ class Person{
 }
 
 class Teacher extends Person {
-  constructor(name: string, age: number, public subject: string){
+  constructor(name: string, age: number, public _subject: string){
     super(name,age)
+  }
+  get subject(){
+    if(!this._subject){
+      throw new Error('There is no subject. When getting.');
+    }
+    return this._subject;
+  }
+  set subject(value){
+    if(!this._subject){
+      throw new Error('There is no subject. When setting.')
+    }
+    this._subject = value;
   }
   greeting(this: Teacher){
     console.log(`Hello my name is ${this.name}, I am ${this.age} years old. I teach ${this.subject}.`)
@@ -19,4 +31,6 @@ class Teacher extends Person {
 }
 
 const teacher = new Teacher('michael', 25, 'English');
+teacher.subject = 'Music';
+console.log(teacher.subject);
 teacher.greeting();
