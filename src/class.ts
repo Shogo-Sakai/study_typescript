@@ -1,4 +1,10 @@
 class Person{
+  static species = 'Homo sapiense';
+  static isAdult(age:number){
+    if (age > 17) return true;
+    return false;
+    }
+  }
   constructor(readonly name:string, protected age: number){
   }
   incrementAge(){
